@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Innvino</title>
+@extends('layouts.app')
 
-    <link rel="stylesheet" href="{{asset('style.css')}}">
-</head>
-<body>
-    adad
-</body>
-</html>
+@section('content')
+    @include('components.main-block-image')
+    @include('components.block-place')
+    @include('components.block-essentials')
+    @include('components.block-wine-map')
+    @include('components.block-about-1')
+    @include('components.block-contact')
+@endsection
