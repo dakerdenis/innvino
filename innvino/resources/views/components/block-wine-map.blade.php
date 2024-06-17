@@ -35,7 +35,7 @@
             </div>
             <div class="wine__map__button">
                 <a href="#">
-
+                    <img src="{{asset('style/uploads/arrow.png')}}" alt="">
                     <p>Wine List</p>
                 </a>
             </div>
