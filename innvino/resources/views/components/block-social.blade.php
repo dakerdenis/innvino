@@ -55,7 +55,7 @@
                 WINE MAP
             </a>
             <div class="social__pages__line"></div>
-            <a href="#" class="social__page">
+            <a href="{{route('wine.menu')}}" class="social__page">
                 MENU
             </a>
             <div class="social__pages__line"></div>

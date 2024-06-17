@@ -10,4 +10,8 @@ class MainPageController extends Controller
     {
         return view('mainpage');
     }
+    public function menu()
+    {
+        return view('menu');
+    }
 }
