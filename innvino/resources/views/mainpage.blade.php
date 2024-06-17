@@ -6,4 +6,5 @@
     @include('components.block-essentials')
     @include('components.block-wine-map')
     @include('components.block-contact')
+    @include('components.block-social')
 @endsection

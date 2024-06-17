@@ -39,7 +39,7 @@
                 <div class="contact__map">  
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12158.130644087534!2d49.8489229!3d40.3748857!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40307d4042306905%3A0xde4f2c6d8921f13f!2sINN%20Vino%20Wine%20Bar!5e0!3m2!1sru!2saz!4v1718619455223!5m2!1sru!2saz"
-                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                         allowfullscreen="" loading="lazy"
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
