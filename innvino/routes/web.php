@@ -11,4 +11,8 @@ Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
+Route::get('/dummy', function () {
+    return 'Dummy Middleware Works!';
+})->middleware('dummy');
+
 Route::get('/admin', [AuthController::class, 'showAdminPage'])->middleware('admin')->name('admin');
