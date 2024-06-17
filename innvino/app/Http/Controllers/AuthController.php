@@ -27,7 +27,8 @@ class AuthController extends Controller
 
     public function showAdminPage()
     {
-        return view('admin');
+        //return view('admin');
+        return 'Admin Page';
     }
 
     public function logout()
