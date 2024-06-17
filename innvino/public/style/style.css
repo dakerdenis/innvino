@@ -342,3 +342,135 @@ h6 {
   text-transform: uppercase;
   margin-top: 15px;
 }
+/****************************/
+
+.block__contact{
+  width: 100%;
+  height: 100vh;
+
+}
+
+.contact__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.contact__wallpaper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+
+}
+.contact__wallpaper  img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.contact__placeholder {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 300;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__content {
+  background-color: #fff;
+  width: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contact__logo {
+  width: 100px;
+  height: 50px;
+}
+.contact__logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.contact__name {
+  text-transform: uppercase;
+  color: var(--grey);
+  font-size: 28px;
+  font-weight: 600;
+  margin-top: 40px;
+}
+.contact__desc {
+  margin-top: 25px;
+  font-weight: 600;
+  font-family: "Crimson Text", serif;
+  text-align: center;
+  max-width: 280px;
+  font-size: 19px;
+  font-style: italic;
+}
+.contact__adress {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact__adress p:nth-child(1){
+  font-family: "Crimson Text", serif;
+  color: var(--grey);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+.contact__adress p:nth-child(2){
+  font-family: "Crimson Text", serif;
+  color: var(--light_grey);
+  font-size: 19px;
+  font-style: italic;
+  margin-top: 5px;
+}
+.contact_phone {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact_phone p:nth-child(1){
+  font-family: "Crimson Text", serif;
+  color: var(--grey);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+.contact_phone p:nth-child(2){
+  font-family: "Crimson Text", serif;
+  color: var(--brown);
+  font-size: 19px;
+  margin-top: 5px;
+}
+
+
+
+.contact__email {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.contact__email p:nth-child(1){
+  font-family: "Crimson Text", serif;
+  color: var(--grey);
+  font-size: 19px;
+  font-style: italic;
+  font-weight: 600;
+}
+.contact__email p:nth-child(2){
+  font-family: "Crimson Text", serif;
+  color: var(--brown);
+  font-size: 19px;
+  margin-top: 5px;
+}
+.contact__map {
+}

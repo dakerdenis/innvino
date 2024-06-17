@@ -5,6 +5,5 @@
     @include('components.block-place')
     @include('components.block-essentials')
     @include('components.block-wine-map')
-    @include('components.block-about-1')
     @include('components.block-contact')
 @endsection
