@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Innvino</title>
     <link rel="stylesheet" href="{{ asset('./style/style.css') }}">
+    
 </head>
 <body>
     <div class="main__wrapper">
