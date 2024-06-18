@@ -11,7 +11,7 @@
                     Innvino İdarəetmə panelı
                 </div>
 
-                <form method="POST" action="{{ route('login') }}" class="login__form">
+                <form method="POST" action="{{ route('admin.login') }}" class="login__form">
                     @csrf
                     <div class="input__container">
                         <div class="input__container__desc">
