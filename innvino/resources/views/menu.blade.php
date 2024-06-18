@@ -4,12 +4,17 @@
     <div class="menu_wrapper">
         <div class="menu__container">
             <div class="menu__image">
-                <div class="menu__image__back"></div>
+                <div class="menu__image__back">
+                    <img src="{{ asset('style/uploads/win2.webp') }}" alt="">
+                </div>
                 <div class="menu__image__logo">
-
+                    <img src="{{ asset('style/uploads/logo.jpg') }}" alt="">
                 </div>
                 <div class="menu__image__name">
                     Innvino
+                </div>
+                <div class="menu__burger">
+                    
                 </div>
             </div>
 
