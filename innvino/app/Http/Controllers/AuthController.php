@@ -25,10 +25,14 @@ class AuthController extends Controller
         ]);
     }
 
+    // AuthController.php
     public function showAdminPage()
     {
-        //return view('admin');
-        return 'Admin Page';
+        if (Auth::check()) {
+            return 'Admin Page';
+        } else {
+            return 'Not Authenticated';
+        }
     }
 
     public function logout()
