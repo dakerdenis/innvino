@@ -25,7 +25,7 @@
 
         <div class="admin__panel__content">
             <div class="panel__content__wrapper">
-
+                
             </div>
         </div>
     </div>
