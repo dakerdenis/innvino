@@ -14,7 +14,30 @@
                     Innvino
                 </div>
                 <div class="menu__burger">
-                    
+                    <div class="burger-menu">
+                        <div class="burger-icon" id="burger-icon">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                        <nav class="nav" id="nav">
+                            <br>
+                            <br>
+                            <a href="#">
+                                Винная карта
+                            </a>
+                            <br>
+                            <ul>
+                                <li><a href="#home">Название категорий</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#home">Название категорий</a></li>
+                            </ul>
+                            <ul>
+                                <li><a href="#home">Название категорий</a></li>
+                            </ul>
+                        </nav>
+                    </div>
                 </div>
             </div>
 
@@ -36,9 +59,22 @@
 
                 </div>
             </div>
-            
+
 
 
         </div>
     </div>
+
+    <script>
+        // script.js
+        document.addEventListener('DOMContentLoaded', () => {
+            const burgerIcon = document.getElementById('burger-icon');
+            const nav = document.getElementById('nav');
+
+            burgerIcon.addEventListener('click', () => {
+                burgerIcon.classList.toggle('open');
+                nav.classList.toggle('open');
+            });
+        });
+    </script>
 @endsection
