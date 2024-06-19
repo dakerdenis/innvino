@@ -11,7 +11,12 @@
             <div class="panel__navigation__name">
                 Innvino 
             </div>
+            <div class="panel__navigation__line"></div>
             <div class="panel__navigation__elements">
+                <a href="#">Просмотр сайта</a>
+                <a href="#">Просмотр Меню</a>
+                <br>
+                <a href="#">Главная</a>
                 <a href="#">Меню</a>
                 <a href="#">Винная карта</a>
             </div>
@@ -25,7 +30,7 @@
 
         <div class="admin__panel__content">
             <div class="panel__content__wrapper">
-                
+
             </div>
         </div>
     </div>

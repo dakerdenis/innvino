@@ -18,7 +18,7 @@ class AdminController extends Controller
 
         if (Auth::attempt($credentials)) {
             // Authentication passed...
-            return redirect()->route('admin.main');
+            return redirect()->route('admin.main', ['content'=>'main']);
         }
 
         return back()->withErrors([
@@ -34,11 +34,8 @@ class AdminController extends Controller
     public function logout(Request $request)
     {
         Auth::logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
-
         return redirect('/admin-panel');
     }
 }
