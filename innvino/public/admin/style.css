@@ -221,6 +221,38 @@
     background-color: #7a7a7a62;
 }
 .admin__panel__content {
+    width: 80%;
+    height: 100%;
+
+
 }
 .panel__content__wrapper {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+/********/
+.menu__container {
+    width: 100%;
+    padding: 20px;
+}
+.menu__wrapper {
+    min-height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+
+}
+.menu__content__info {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border-bottom: 0.9px solid #7a7a7a48;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: var(--grey);
+}
+.menu__content__container {
 }

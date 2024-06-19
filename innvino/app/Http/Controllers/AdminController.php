@@ -26,9 +26,10 @@ class AdminController extends Controller
         ]);
     }
 
-    public function main()
-    {
-        return view('admin');
+    public function main(Request $request, $content = null)
+    
+    {   $content = $request->input('content', $content);
+        return view('admin',['content'=>$content]);
     }
 
     public function logout(Request $request)

@@ -3,78 +3,57 @@
 @section('content')
     <div class="menu_wrapper">
         <div class="menu__container">
-            <div class="menu__image">
-                <div class="menu__image__back">
-                    <img src="{{ asset('style/uploads/win2.webp') }}" alt="">
-                </div>
-                <div class="menu__image__logo">
-                    <img src="{{ asset('style/uploads/logo.jpg') }}" alt="">
-                </div>
-                <div class="menu__image__name">
-                    Innvino
-                </div>
-                <div class="menu__burger">
-                    <div class="burger-menu">
-                        <div class="burger-icon" id="burger-icon">
-                            <div class="line"></div>
-                            <div class="line"></div>
-                            <div class="line"></div>
-                        </div>
-                        <nav class="nav" id="nav">
-                            <br>
-                            <br>
-                            <a href="#">
-                                Винная карта
-                            </a>
-                            <br>
-                            <ul>
-                                <li><a href="#home">Название категорий</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#home">Название категорий</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#home">Название категорий</a></li>
-                            </ul>
-                        </nav>
-                    </div>
+
+            <div class="menu__navigation">
+                <div class="menu__language">
+                    AZ
                 </div>
             </div>
 
-            <div class="menu__elements_container">
-                <!----->
-                <div class="menu__element__block">
-                    <div class="menu__element__name">
-                        Название категории
-                    </div>
+            <div class="menu__food-container">
+                <div class="food__tabulator tab">
+                    <button class="tablinks" onclick="openCity(event, 'main')" id="defaultOpen">All</button>
+                    <button class="tablinks" onclick="openCity(event, 'salat')">Main</button>
+                    <button class="tablinks" onclick="openCity(event, 'drinks')">Salats</button>
+                    <button class="tablinks" onclick="openCity(event, 'drinks')">Pasta</button>
+                </div>
 
-                    <div class="menu__sub-element">
-                        <div class="sub-element__name">
-                            Product name
-                        </div>
-                        <div class="sub-element__price">
-                            20 / 30 AZN
-                        </div>
-                    </div>
-
+                <div class="food__elements">
+                    <div id="main" class="tabcontent">
+                        <h3>main</h3>
+                        <p>London is the capital city of England.</p>
+                      </div>
+                      
+                      <div id="salat" class="tabcontent">
+                        <h3>salat</h3>
+                        <p>Paris is the capital of France.</p> 
+                      </div>
+                      
+                      <div id="drinks" class="tabcontent">
+                        <h3>drinks</h3>
+                        <p>Tokyo is the capital of Japan.</p>
+                      </div>
                 </div>
             </div>
-
-
 
         </div>
     </div>
-
     <script>
-        // script.js
-        document.addEventListener('DOMContentLoaded', () => {
-            const burgerIcon = document.getElementById('burger-icon');
-            const nav = document.getElementById('nav');
-
-            burgerIcon.addEventListener('click', () => {
-                burgerIcon.classList.toggle('open');
-                nav.classList.toggle('open');
-            });
-        });
-    </script>
+        function openCity(evt, cityName) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablinks");
+          for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+          }
+          document.getElementById(cityName).style.display = "block";
+          evt.currentTarget.className += " active";
+        }
+        
+        // Get the element with id="defaultOpen" and click on it
+        document.getElementById("defaultOpen").click();
+        </script>
 @endsection
